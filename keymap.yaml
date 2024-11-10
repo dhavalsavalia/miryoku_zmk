@@ -10,22 +10,22 @@ layers:
     - [{t: ESC, h: Media}, {t: SPACE, h: Nav}, {t: TAB, h: Mouse}, {t: RET, h: Sym}, {t: BSPC, h: Num}, {t: DEL, h: Fun}]
 
   Nav:
-    - [ESC, "&bootloader", "&u_to_U_TAP", "&u_to_U_EXTRA", "&u_to_U_BASE", "", "Sft+Gui+ Z", "Gui+ V", "Gui+ C", "Gui+ X", "Gui+ Z", "\\"]
-    - [TAB, LGUI, LALT, LCTRL, LSHFT, "", LEFT, DOWN, UP, RIGHT, {t: "&caps_word", s: CAPS}, "'"]
-    - [LSHFT, "", RALT, "&u_to_U_NUM", "&u_to_U_NAV", "", HOME, "PG DN", "PG UP", END, INS, RSHFT]
+    - [ESC, "BOOT", "TAP", "EXTRA", "BASE", "", "REDO", "PASTE", "COPY", "CUT", "UNDO", "\\"]
+    - [TAB, LGUI, LALT, LCTRL, LSHFT, "", LEFT, DOWN, UP, RIGHT, CAPS, "'"]
+    - [LSHFT, "", RALT, "NUM", "NAV", "", HOME, "PGDN", "PGUP", END, INS, RSHFT]
     - ["", {type: held}, "", RET, BSPC, DEL]
 
   Mouse:
-    - [ESC, "&bootloader", "&u_to_U_TAP", "&u_to_U_EXTRA", "&u_to_U_BASE", "", "Sft+Gui+ Z", "Gui+ V", "Gui+ C", "Gui+ X", "Gui+ Z", "\\"]
-    - [TAB, LGUI, LALT, LCTRL, LSHFT, "", "KP 4", "KP 2", "KP 8", "KP 6", "", "'"]
-    - [LSHFT, "", RALT, "&u_to_U_SYM", "&u_to_U_MOUSE", "", "", "", "", "", "", RSHFT]
-    - ["", "", {type: held}, "&mkp MB2", "&mkp MB1", "&mkp MB3"]
+    - [ESC, "BOOT", "TAP", "EXTRA", "BASE", "", "REDO", "PASTE", "COPY", "CUT", "UNDO", "\\"]
+    - [TAB, LGUI, LALT, LCTRL, LSHFT, "", "←", "↓", "↑", "→", "", "'"]
+    - [LSHFT, "", RALT, "SYM", "MOUSE", "", "", "", "", "", "", RSHFT]
+    - ["", "", {type: held}, "RMB", "LMB", "MMB"]
 
   Media:
-    - [ESC, "&bootloader", "&u_to_U_TAP", "&u_to_U_EXTRA", "&u_to_U_BASE", "", "RGB EFF", "RGB HUI", "RGB SAI", "RGB BRI", "RGB TOG", "\\"]
-    - [TAB, LGUI, LALT, LCTRL, LSHFT, "", PREV, "VOL DN", "VOL UP", NEXT, "EP TOG", "'"]
-    - [LSHFT, "", RALT, "&u_to_U_FUN", "&u_to_U_MEDIA", "", {t: BT, h: "0", s: "&u_macro_u_bt_sel_0"}, {t: BT, h: "1", s: "&u_macro_u_bt_sel_1"}, {t: BT, h: "2", s: "&u_macro_u_bt_sel_2"}, {t: BT, h: "3", s: "&u_macro_u_bt_sel_3"}, {t: "OUT TOG", s: "OUT USB"}, RSHFT]
-    - [{type: held}, "", "", STOP, PP, MUTE]
+    - [ESC, "BOOT", "TAP", "EXTRA", "BASE", "", "RGB⇢", "HUE+", "SAT+", "BRI+", "RGB", "\\"]
+    - [TAB, LGUI, LALT, LCTRL, LSHFT, "", "⏮", "VOL-", "VOL+", "⏭", "EP", "'"]
+    - [LSHFT, "", RALT, "FUN", "MEDIA", "", "BT0", "BT1", "BT2", "BT3", "OUT", RSHFT]
+    - [{type: held}, "", "", "⏹", "⏯", "🔇"]
 
   Num:
     - [ESC, "[", "7", "8", "9", "]", "", "&u_to_U_BASE", "&u_to_U_EXTRA", "&u_to_U_TAP", "&bootloader", "\\"]
@@ -46,10 +46,10 @@ layers:
     - [APP, SPACE, TAB, "", "", {type: held}]
 
   Button:
-    - [ESC, "Gui+ Z", "Gui+ X", "Gui+ C", "Gui+ V", "Sft+Gui+ Z", "Sft+Gui+ Z", "Gui+ V", "Gui+ C", "Gui+ X", "Gui+ Z", "\\"]
+    - [ESC, "UNDO", "CUT", "COPY", "PASTE", "REDO", "REDO", "PASTE", "COPY", "CUT", "UNDO", "\\"]
     - [TAB, LGUI, LALT, LCTRL, LSHFT, "", "", LSHFT, LCTRL, LALT, LGUI, "'"]
-    - [LSHFT, {t: "Gui+ Z", type: held}, "Gui+ X", "Gui+ C", "Gui+ V", "Sft+Gui+ Z", "Sft+Gui+ Z", "Gui+ V", "Gui+ C", "Gui+ X", "Gui+ Z", RSHFT]
-    - ["&mkp MB3", "&mkp MB1", "&mkp MB2", "&mkp MB2", "&mkp MB1", "&mkp MB3"]
+    - [LSHFT, {t: "UNDO", type: held}, "CUT", "COPY", "PASTE", "REDO", "REDO", "PASTE", "COPY", "CUT", "UNDO", RSHFT]
+    - ["MMB", "LMB", "RMB", "RMB", "LMB", "MMB"]
 
 draw_config:
   key_h: 56
