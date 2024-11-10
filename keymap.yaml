@@ -1,0 +1,59 @@
+layout:
+  qmk_keyboard: corne_rotated
+  qmk_layout: LAYOUT_split_3x6_3
+
+layers:
+  Base:
+    - [ESC, Q, W, E, R, T, Y, U, I, O, P, "\\"]
+    - [TAB, {t: A, h: LGUI}, {t: S, h: LALT}, {t: D, h: LCTRL}, {t: F, h: LSHFT}, G, H, {t: J, h: LSHFT}, {t: K, h: LCTRL}, {t: L, h: LALT}, {t: ";", h: LGUI}, "'"]
+    - [LSHFT, {t: Z, h: Button}, {t: X, h: RALT}, C, V, B, N, M, ",", {t: ".", h: RALT}, {t: "/", h: Button}, RSHFT]
+    - [{t: ESC, h: Media}, {t: SPACE, h: Nav}, {t: TAB, h: Mouse}, {t: RET, h: Sym}, {t: BSPC, h: Num}, {t: DEL, h: Fun}]
+
+  Nav:
+    - [ESC, "&bootloader", "&u_to_U_TAP", "&u_to_U_EXTRA", "&u_to_U_BASE", "", "Sft+Gui+ Z", "Gui+ V", "Gui+ C", "Gui+ X", "Gui+ Z", "\\"]
+    - [TAB, LGUI, LALT, LCTRL, LSHFT, "", LEFT, DOWN, UP, RIGHT, {t: "&caps_word", s: CAPS}, "'"]
+    - [LSHFT, "", RALT, "&u_to_U_NUM", "&u_to_U_NAV", "", HOME, "PG DN", "PG UP", END, INS, RSHFT]
+    - ["", {type: held}, "", RET, BSPC, DEL]
+
+  Mouse:
+    - [ESC, "&bootloader", "&u_to_U_TAP", "&u_to_U_EXTRA", "&u_to_U_BASE", "", "Sft+Gui+ Z", "Gui+ V", "Gui+ C", "Gui+ X", "Gui+ Z", "\\"]
+    - [TAB, LGUI, LALT, LCTRL, LSHFT, "", "KP 4", "KP 2", "KP 8", "KP 6", "", "'"]
+    - [LSHFT, "", RALT, "&u_to_U_SYM", "&u_to_U_MOUSE", "", "", "", "", "", "", RSHFT]
+    - ["", "", {type: held}, "&mkp MB2", "&mkp MB1", "&mkp MB3"]
+
+  Media:
+    - [ESC, "&bootloader", "&u_to_U_TAP", "&u_to_U_EXTRA", "&u_to_U_BASE", "", "RGB EFF", "RGB HUI", "RGB SAI", "RGB BRI", "RGB TOG", "\\"]
+    - [TAB, LGUI, LALT, LCTRL, LSHFT, "", PREV, "VOL DN", "VOL UP", NEXT, "EP TOG", "'"]
+    - [LSHFT, "", RALT, "&u_to_U_FUN", "&u_to_U_MEDIA", "", {t: BT, h: "0", s: "&u_macro_u_bt_sel_0"}, {t: BT, h: "1", s: "&u_macro_u_bt_sel_1"}, {t: BT, h: "2", s: "&u_macro_u_bt_sel_2"}, {t: BT, h: "3", s: "&u_macro_u_bt_sel_3"}, {t: "OUT TOG", s: "OUT USB"}, RSHFT]
+    - [{type: held}, "", "", STOP, PP, MUTE]
+
+  Num:
+    - [ESC, "[", "7", "8", "9", "]", "", "&u_to_U_BASE", "&u_to_U_EXTRA", "&u_to_U_TAP", "&bootloader", "\\"]
+    - [TAB, ";", "4", "5", "6", "=", "", LSHFT, LCTRL, LALT, LGUI, "'"]
+    - [LSHFT, "`", "1", "2", "3", "\\", "", "&u_to_U_NUM", "&u_to_U_NAV", RALT, "", RSHFT]
+    - [".", "0", "-", "", {type: held}, ""]
+
+  Sym:
+    - [ESC, "{", "&", "*", "(", "}", "", "&u_to_U_BASE", "&u_to_U_EXTRA", "&u_to_U_TAP", "&bootloader", "\\"]
+    - [TAB, ":", "$", "%", "^", "+", "", LSHFT, LCTRL, LALT, LGUI, "'"]
+    - [LSHFT, "~", "!", "@", "#", "|", "", "&u_to_U_SYM", "&u_to_U_MOUSE", RALT, "", RSHFT]
+    - ["(", ")", "_", {type: held}, "", ""]
+
+  Fun:
+    - [ESC, F12, F7, F8, F9, PSCRN, "", "&u_to_U_BASE", "&u_to_U_EXTRA", "&u_to_U_TAP", "&bootloader", "\\"]
+    - [TAB, F11, F4, F5, F6, SLCK, "", LSHFT, LCTRL, LALT, LGUI, "'"]
+    - [LSHFT, F10, F1, F2, F3, "PAUSE BREAK", "", "&u_to_U_FUN", "&u_to_U_MEDIA", RALT, "", RSHFT]
+    - [APP, SPACE, TAB, "", "", {type: held}]
+
+  Button:
+    - [ESC, "Gui+ Z", "Gui+ X", "Gui+ C", "Gui+ V", "Sft+Gui+ Z", "Sft+Gui+ Z", "Gui+ V", "Gui+ C", "Gui+ X", "Gui+ Z", "\\"]
+    - [TAB, LGUI, LALT, LCTRL, LSHFT, "", "", LSHFT, LCTRL, LALT, LGUI, "'"]
+    - [LSHFT, {t: "Gui+ Z", type: held}, "Gui+ X", "Gui+ C", "Gui+ V", "Sft+Gui+ Z", "Sft+Gui+ Z", "Gui+ V", "Gui+ C", "Gui+ X", "Gui+ Z", RSHFT]
+    - ["&mkp MB3", "&mkp MB1", "&mkp MB2", "&mkp MB2", "&mkp MB1", "&mkp MB3"]
+
+draw_config:
+  key_h: 56
+  key_w: 60
+  split_gap: 30
+  combo_h: 26
+  combo_w: 28
